@@ -1,0 +1,12 @@
+<html>
+  <head></head>
+  <body>
+    Thanks for your submission.
+    <script>
+      var ref = document.referrer;
+      if (ref == "http://localhost:8000/form.html") {
+        parent.postMessage("formWasSubmitted", "*");
+      }
+    </script>
+  </body>
+</html>
